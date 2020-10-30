@@ -1,0 +1,410 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+
+	/* ВСЯ ШАПКА */
+	.header {
+		background-color: gray;
+		height: 100px;
+		font-family: arial;
+	}
+	/* ЦЕНТРАЛЬНЫЙ ГЛАВНЫЙ ДИВ */
+	.charts-container {
+		width: 1000px;
+		height: 2000px;
+		background-color: white;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: arial;
+
+	}
+
+	/* ДИВ, КОТОРЫЙ СОДЕРЖИТ ДИВЫ ДЛЯ ЛОГОТИПА, ССЫЛОК И КНОПКИ */
+	.header-center {
+		height: 95px;
+		background-color: gray;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+	/* ДИВ ДЛЯ ЧЕТЫРЕХ КНОПОК СОРТИРОВКИ */
+	.charts-sort {
+		background-color: white;
+		height: 100px;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	/* ДИВ ДЛЯ ПЕСНИ, КОТОРАЯ ПОДНЯЛАСЬ В РЕЙТИНГЕ ПЕСЕН */
+	.charts-up {
+		height: 200px;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: C5EDD1;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	/* ДИВ ДЛЯ НОВОЙ ПЕСНИ, КОТОРАЯ ПОПАЛА В РЕЙТИНГ ПЕСЕН */
+	.charts-new {
+		height: 200px;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: FFE7BA;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	/* ДИВ ДЛЯ ПЕСНИ, КОТОРАЯ ОПУСТИЛАСЬ В РЕЙТИНГЕ ПЕСЕН */
+	.charts-down {
+		height: 200px;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: EDC2C2;
+		border-radius: 10px;
+		margin-top: 10px;
+		display: flex;
+	}
+	/* ДИВ ДЛЯ ЛОГОТИПА САЙТА*/
+	.box-logo {
+		height: 95px;
+		width: 200px;
+		
+		 
+	}
+	/* ДИВ ДЛЯ ЧЕТЫРЕХ ССЫЛОК САЙТА*/
+	.box-links {
+		height: 65px;
+		width: 650px;
+		padding-top: 30px;
+		 
+	}
+	/* ДИВ ДЛЯ КНОПКИ "SUBSCRIBE" */
+	.box-buttons {
+		height: 95px;
+		width: 150px;
+		
+		 
+	}
+	/* ДИВ ДЛЯ НОМЕРА И СТАТУСА ПЕСНИ В РЕЙТИНГЕ */
+	.charts-rank {
+		width: 120px;
+		height: 160px;
+		text-align: center;
+		padding-top: 40px;	
+	}
+	/* ДИВ ДЛЯ НАЗВАНИЯ И ИСПОЛНИТЕЛЯ ПЕСНИ */
+	.charts-info {
+		width: 550px;
+		height: 180px;
+		padding-top: 20px;
+		font-weight: 700;
+		font-size: 25px
+	}
+	/* ДИВ ДЛЯ КНОПОК ПЕСНИ */
+	.charts-button {
+		width: 180px;
+		height: 180px;
+		padding-top: 20px;
+		
+	}
+	/* ДИВ ДЛЯ КАРТИНКИ ПЕСНИ ИЛИ АЛЬБОМА */
+	.charts-img {
+		width: 150px;
+		height: 200px;
+		
+		
+	}
+	/* ЧЕТЫРЕ ССЫЛКИ В ШАПКЕ */
+	.links-header {
+		margin-left: 50px;
+		color: white;
+	}
+	/* ФИОЛЕТОВАЯ КНОПКА */
+	.button-purple {
+		background-color: purple;
+		color: white;
+		margin-top: 20px;
+		width: 150px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+	/* СИНЯЯ КНОПКА */
+	.button-blue {
+		background-color: blue;
+		color: white;
+		margin-top: 20px;
+		width: 160px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+	/* ЗЕЛЕНАЯ КНОПКА */
+	.button-green {
+		background-color: green;
+		color: white;
+		margin-top: 20px;
+		width: 150px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+
+	/* КРАСНАЯ КНОПКА */
+	.button-red {
+		background-color: red;
+		color: white;
+		margin-top: 20px;
+		width: 150px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+	.button-orange {
+		background-color: orange;
+		color: white;
+		margin-top: 20px;
+		width: 150px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+	}
+
+	/* ТЕКСТ СТАТУСА ПЕСНИ, КОТОРАЯ ПОДНЯЛАСЬ В РЕЙТИНГЕ */
+	.charts-rank-text-up {
+		font-weight: 700;
+		color: green;
+	}
+	/* ТЕКСТ СТАТУСА ПЕСНИ, КОТОРАЯ НЕДАВНО ПОПАЛА В РЕЙТИНГ */
+	.charts-rank-text-new {
+		font-weight: 700;
+		color: orange;
+	}
+	/* ТЕКСТ СТАТУСА ПЕСНИ, КОТОРАЯ ОПУСТИЛАСЬ В РЕЙТИНГЕ */
+	.charts-rank-text-down {
+		font-weight: 700;
+		color: red;
+	}
+	/* НАЗВАНИЕ ПЕСНИ */
+	.charts-info-songname {
+		color: blue;
+	}
+	/* НАЗВАНИЕ ИСПОЛНИТЕЛЯ */
+	.charts-info-artistname {
+		color: gray;
+	}
+	/* КАРТИНКА ДЛЯ ПЕСНИ */
+	.charts-img-size {
+		width: 150px;
+		margin-top: 40px;
+		height: 120px
+	}
+	.img-logo {
+		width: 200px;
+		margin-top: 20px
+	}
+</style>
+
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img class="img-logo" src="https://www.pngkit.com/png/full/234-2341310_billboard-logo-png-clip-black-and-white-2018.png">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<a class="links-header" href="">CHARTS</a>
+			<a class="links-header" href="">NEWS</a>
+			<a class="links-header" style="color: red" href="">VIDEO</a>
+			<a class="links-header" style="color: orange" href="">PHOTOS</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<button class="button-purple">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чарт-контейнер -->
+<div class="charts-container">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-sort">
+		<button class="button-orange">THIS WEEK</button>
+		<button class="button-red">LAST WEEK</button>
+		<button class="button-green">PEAK</button>
+		<button class="button-purple">DURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>1</h1>
+			<p class="charts-rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">I Don't Want To Set The World On Fire</p>
+			<p class="charts-info-artistname">The Ink Spots</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Ink_Spots_Billboard_3.jpg">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>2</h1>
+			<p class="charts-rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Верю в гороскоп
+</p>
+			<p class="charts-info-artistname">Рада Рай</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="data:image/jpeg;base64,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">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>3</h1>
+			<p class="charts-rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Костёр</p>
+			<p class="charts-info-artistname">Клава Кока</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://fuzzmusic.ru/wp-content/uploads/2020/10/new-project-2020-10-15t033603.492.jpg">
+		</div>
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>4</h1>
+			<p class="charts-rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">BFG Division</p>
+			<p class="charts-info-artistname">Mick Gordon</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://www.ostmusic.org/images/albums/doom.jpg">
+		</div>
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>5</h1>
+			<p class="charts-rank-text-down">Down</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Bye Bye</p>
+			<p class="charts-info-artistname">Мэрайя Кэри</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-green">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="data:image/jpeg;base64,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">
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>6</h1>
+			<p class="charts-rank-text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Слухати</p>
+			<p class="charts-info-artistname">Тимчасова Назва</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://i.ytimg.com/vi/1OQDl9hiWSs/mqdefault.jpg">
+		</div>
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>7</h1>
+			<p class="charts-rank-text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="charts-info-songname">Gdzie jest biały węgorz ? (Zejście)</p>
+			<p class="charts-info-artistname">Cypis</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button-blue">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img class="charts-img-size" src="https://images.genius.com/00f36ebde9092d743605768039de9f06.600x600x1.jpg">
+		</div>
+	</div>
+</div>
+<!--  -->
