@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.bg {
+			background-color: ;
+		}
+
+		h4 {
+			color: white;
+		}
+
+	</style>
+</head>
+<body style="background-image: url(bg.gif); background-size: 100% 100%">
+	<!-- это div-родитель -->
+	<div class="col-7 mx-auto">
+		<div class="text-center">
+			<h1 class="task font-weight-bold">-=МОРСКОЙ БОЙ=-</h1>
+			<h1  class="fourx_ship_h1 font-weight-bold text-dark">4x корабли: <span class="fourxship_span"></span></h1>
+			<h1 class="threex_ship_h1 font-weight-bold" style="color: darkgray">3x корабли: <span class="threex_ship_span"></span></h1>
+			<h1  class="twox_ship_h1 font-weight-bold" style="color: lightgray">2x корабли: <span class="twoxship_span"></span></h1>
+			<h1  class="onex_ship_h1 font-weight-bold" style="color: white">1x корабли: <span class="onexship_span"></span></h1>
+		</div>
+	</div>
+	<div class="col-7 mx-auto" style="background-image: url(radar.gif); background-size: 100% 100%; opacity: 0.4">
+		<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+		<div class="row">
+			<div class="col-1 px-5 py-3  text-center border">
+
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3  text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>6</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>7</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>8</h4>
+			</div>
+			<div class="col-1 px-5  py-3  text-center border">
+				<h4>9</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>10</h4>
+			</div>
+			<div class="col-1 px-5 py-3  text-center border">
+
+			</div>
+		</div>
+		<!--Линия А-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>A</h4>
+			</div>
+			<div class="col-1  px-5  bg border threex_ship">
+				<img src="threex_ship.png" style="display: none;" class="pic_threex_ship1">
+			</div>
+			<div class="col-1  px-5 py-4 bg border threex_ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border threex_ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 bg border threex_ship2">
+				<img src="threex_ship.png" style="display: none;" class="pic_threex_ship2">
+			</div>
+			<div class="col-1 px-5 py-4 bg border threex_ship2">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border threex_ship2">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>A</h4>
+			</div>
+		</div>
+		<!--Линия B-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-2 bg border twox_ship">
+				<img src="twox_ship.png" style="display: none;" class="pic_twox_ship1">
+			</div>
+			<div class="col-1  px-5 py-4 bg border twox_ship">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-2 bg border twox_ship2">
+				<img src="twox_ship.png" style="display: none;" class="pic_twox_ship2">
+			</div>
+			<div class="col-1 px-5 py-4  bg border twox_ship2">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-2 bg border twox_ship3">
+				<img src="twox_ship.png" style="display: none;" class="pic_twox_ship3">
+			</div>
+			<div class="col-1  px-5 py-4 bg border twox_ship3">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>B</h4>
+			</div>
+		</div>
+		<!--Линия C-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border onex_ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border onex_ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border onex_ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border empty_cell">
+				
+			</div>	
+			<div class="col-1 bg border onex_ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>C</h4>
+			</div>
+		</div>
+		<!--Линия D-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>D</h4>
+			</div>
+			<div class="col-1 bg pl-4 border fourx_ship">
+				<img src="fourx_ship.png" style="display: none;" class="pic_fourx_ship">
+			</div>
+			<div class="col-1  px-5 py-4 bg border  fourx_ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border fourx_ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border fourx_ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>D</h4>
+			</div>
+		</div>
+		<!--Линия E-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>E</h4>
+			</div>
+			<div class="col-1 px-5 py-4  bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border  empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>E</h4>
+			</div>
+		</div>
+		<!--Линия F-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>F</h4>
+			</div>
+		</div>
+				<!--Линия G-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>G</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>G</h4>
+			</div>
+		</div>
+				<!--Линия H-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>H</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>H</h4>
+			</div>
+		</div>
+				<!--Линия I-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>I</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>I</h4>
+			</div>
+		</div>
+
+		<!--Линия J-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>J</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border empty_cell">
+				
+			</div>
+			<div class="col-1 px-5 py-4  text-center border">
+				<h4>J</h4>
+			</div>
+		</div>
+				<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+		<div class="row">
+			<div class="col-1 px-5 py-3  text-center border">
+
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3  text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>6</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>7</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>8</h4>
+			</div>
+			<div class="col-1 px-5  py-3  text-center border">
+				<h4>9</h4>
+			</div>
+			<div class="col-1 px-5 py-3   text-center border">
+				<h4>10</h4>
+			</div>
+			<div class="col-1 px-5 py-3  text-center border">
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">   
+		// ВАРИАНТ АЛГОРИТМА ОТ ОЛЕГА. КОД МОЖЕТ БЫТЬ НАМНОГО УЛУЧШЕН.
+		let score = 0; // очки (макс = 20, потому что все корабли = 20 клеток) для финального алерта 
+		let destroyed_fourx_ships = 0;
+		let destroyed_threex_ship1 = 0; // кол-во частей первого 3х корабля (макс = 3)
+		let destroyed_threex_ship2 = 0;
+		let destroyed_threex_ships = 0; // общее кол-во частей 3х кораблей (макс = 6)
+		let destroyed_twox_ships = 0;
+		let destroyed_twox_ship1 = 0;
+		let destroyed_twox_ship2 = 0;
+		let destroyed_twox_ship3 = 0;
+		let destroyed_onex_ships = 0;
+
+		let fourxship_count = 1; // кол-во 4х кораблей 
+		let threexship_count = 2;
+		let twoxship_count = 3;
+		let onexship_count = 4;
+
+		let fourxship_span = document.querySelector(".fourxship_span"); 
+		fourxship_span.innerHTML = fourxship_count; 
+		let threex_ship_span = document.querySelector(".threex_ship_span");
+		threex_ship_span.innerHTML = threexship_count;
+		let twoxship_span = document.querySelector(".twoxship_span");
+		twoxship_span.innerHTML = twoxship_count;
+		let onexship_span = document.querySelector(".onexship_span");
+		onexship_span.innerHTML = onexship_count;
+
+		let fourx_ship_array = document.querySelectorAll(".fourx_ship"); 
+
+		let threex_ship_array = document.querySelectorAll(".threex_ship"); // ищем части первого 3х корабля
+		let threex_ship2_array = document.querySelectorAll(".threex_ship2"); // ищем части второго 3х корабля
+
+		let twox_ship_array = document.querySelectorAll(".twox_ship");  // ищем части первого 2х корабля
+		let twox_ship2_array = document.querySelectorAll(".twox_ship2");  // ищем части второго 2х корабля
+		let twox_ship3_array = document.querySelectorAll(".twox_ship3");  // ищем части третьего 2х корабля
+
+		let onex_ship_array = document.querySelectorAll(".onex_ship");
+
+		let empty_cell_array = document.querySelectorAll(".empty_cell");
+
+
+		// цикл для пустых клеток
+		for(let x = 0; x < 80; x++) {
+			empty_cell_array[x].onclick = function() {
+				empty_cell_array[x].style.backgroundColor = "gray";
+			}
+		}
+
+		// цикл для 4x кораблей
+		for(let y = 0; y < 4; y++) {
+			fourx_ship_array[y].onclick = function() {
+				fourx_ship_array[y].style.backgroundColor = "red";
+				destroyed_fourx_ships++;
+				score++;
+				fourx_ship_array[y].onclick = function() {
+
+				}
+				if(destroyed_fourx_ships == 4) {
+					document.querySelector(".fourx_ship_h1").style.textDecoration = "line-through";
+					fourxship_count--;
+					fourxship_span.innerHTML = fourxship_count;
+					for(let i = 0; i < 4; i++) {
+						fourx_ship_array[i].style.backgroundColor = "";
+					}
+					document.querySelector(".pic_fourx_ship").style.display = "block";
+				}
+				if(score == 20) {
+					alert("ПОБЕДА!");
+				}
+			}
+		}
+
+		// цикл для 3x кораблей 
+		for(let z = 0; z < 3; z++) {
+			threex_ship_array[z].onclick = function() { // дивам (частям) первого 3х корабля даём онклики
+				threex_ship_array[z].style.backgroundColor = "red"; 
+				destroyed_threex_ship1++; // увеличиваем кол-во уничтоженных частей первого 3х корабля на единицу 
+				destroyed_threex_ships++; // увеличиваем кол-во уничтоженных частей всех 3х кораблей на единицу
+				score++; // увеличиваем кол-во общих очков
+				threex_ship_array[z].onclick = function() { // меняем онклик на пустоту, чтобы нельзя было еще раз нажать на уничтоженную часть корабля
+
+				}
+				if(destroyed_threex_ship1 == 3) { // если кол-во уничтоженных частей первого 3х корабля равно 3
+					threexship_count--; // уменьшаем кол-во 3х кораблей на единицу
+					threex_ship_span.innerHTML = threexship_count; // отображаем обновленное кол-во 3х кораблей в соответствующем спане  
+					for(let i = 0; i < 3; i++) { // три раза повторяем
+						threex_ship_array[i].style.backgroundColor = ""; // цвет фона убираем, чтобы дивы корабля стали прозрачными
+					}
+					document.querySelector(".pic_threex_ship1").style.display = "block"; // отображаем картинку с уничтоженным кораблем
+
+				}
+				if(destroyed_threex_ships == 6) { // если кол-во уничтоженных частей всех кораблей равно 6, т.е. у нас два 3х корабля = 6 клеток
+					document.querySelector(".threex_ship_h1").style.textDecoration = "line-through"; // зачеркиваем текст h1
+					threex_ship_span.innerHTML = 0; // отображаем, что больше 3х кораблей нет 
+
+				}
+				if(score == 20) { // при каждом клике проверяем, был ли это последний уничтоженный корабль в игре? Потому что любой див любого корабля может быть последним, придётся каждому диву дописывать такую проверку
+					alert("ПОБЕДА!");
+				}
+			}
+
+			threex_ship2_array[z].onclick = function() {
+				threex_ship2_array[z].style.backgroundColor = "red";
+				destroyed_threex_ship2++;
+				destroyed_threex_ships++;
+				score++;
+				threex_ship2_array[z].onclick = function() {
+
+				}
+				if(destroyed_threex_ship2 == 3) {
+					threexship_count--;
+					threex_ship_span.innerHTML = threexship_count;
+					for(let i = 0; i < 3; i++) {
+						threex_ship2_array[i].style.backgroundColor = "";
+					}
+					document.querySelector(".pic_threex_ship2").style.display = "block";
+				}
+				if(destroyed_threex_ships == 6) {
+					document.querySelector(".threex_ship_h1").style.textDecoration = "line-through";
+					threexship_count--;
+					threex_ship_span.innerHTML = 0;
+
+				}
+				if(score == 20) {
+					alert("ПОБЕДА!");
+				}
+			}
+		}
+
+
+		// цикл для 2x кораблей 
+		for(let b = 0; b < 2; b++) {
+			twox_ship_array[b].onclick = function() {
+				twox_ship_array[b].style.backgroundColor = "red";
+				destroyed_twox_ships++;
+				destroyed_twox_ship1++;
+				score++;
+				twox_ship_array[b].onclick = function() {
+
+				}
+				if(destroyed_twox_ship1 == 2) {
+					twoxship_count--;
+					twoxship_span.innerHTML = twoxship_count;
+					for(let i = 0; i < 2; i++) {
+						twox_ship_array[i].style.backgroundColor = "";
+					}
+					document.querySelector(".pic_twox_ship1").style.display = "block";
+				}
+
+				if(destroyed_twox_ships == 6) {
+					document.querySelector(".twox_ship_h1").style.textDecoration = "line-through";
+					twoxship_count--;
+					twox_ship_span.innerHTML = 0;
+
+				}
+				if(score == 20) {
+					alert("ПОБЕДА!");
+				}
+			}
+
+
+			twox_ship2_array[b].onclick = function() {
+				twox_ship2_array[b].style.backgroundColor = "red";
+				destroyed_twox_ships++;
+				destroyed_twox_ship2++;
+				score++;
+				twox_ship2_array[b].onclick = function() {
+
+				}
+				if(destroyed_twox_ship2 == 2) {
+					twoxship_count--;
+					twoxship_span.innerHTML = twoxship_count;
+					for(let i = 0; i < 2; i++) {
+						twox_ship2_array[i].style.backgroundColor = "";
+					}
+					document.querySelector(".pic_twox_ship2").style.display = "block";
+				}
+
+				if(destroyed_twox_ships == 6) {
+					document.querySelector(".twox_ship_h1").style.textDecoration = "line-through";
+					twoxship_count--;
+					twox_ship_span.innerHTML = 0;
+
+				}
+				if(score == 20) {
+					alert("ПОБЕДА!");
+				}
+			}
+
+			twox_ship3_array[b].onclick = function() {
+				twox_ship3_array[b].style.backgroundColor = "red";
+				destroyed_twox_ships++;
+				destroyed_twox_ship3++;
+				score++;
+				twox_ship3_array[b].onclick = function() {
+
+				}
+				if(destroyed_twox_ship3 == 2) {
+					twoxship_count--;
+					twoxship_span.innerHTML = twoxship_count;
+					for(let i = 0; i < 2; i++) {
+						twox_ship3_array[i].style.backgroundColor = "";
+					}
+					document.querySelector(".pic_twox_ship3").style.display = "block";
+				}
+
+				if(destroyed_twox_ships == 6) {
+					document.querySelector(".twox_ship_h1").style.textDecoration = "line-through";
+					twoxship_count--;
+					twox_ship_span.innerHTML = 0;
+
+				}
+				if(score == 20) {
+					alert("ПОБЕДА!");
+				}
+			}
+		}
+
+		// цикл для 1x кораблей
+		for(let e = 0; e < 4; e++) {
+			onex_ship_array[e].onclick = function() {
+				onex_ship_array[e].style.backgroundSize = "100% 100%";
+				onex_ship_array[e].style.backgroundImage = "url(onex_ship.png)";
+				destroyed_onex_ships++;
+				score++;
+				onexship_count--;
+				onexship_span.innerHTML = onexship_count;
+				onex_ship_array[e].onclick = function() {
+					
+				}
+				if(destroyed_onex_ships == 4) {
+					document.querySelector(".onex_ship_h1").style.textDecoration = "line-through";
+				}
+				if(score == 20) {
+					alert("ПОБЕДА!");
+				}
+			}
+		}
+
+		
+	</script>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	
+
+</script>
