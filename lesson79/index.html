@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.box {
+			height: 100px;
+			width: 100px;
+			background-color: green;
+			border: solid;
+			position: absolute;
+		}
+		.firstBox {
+			background-color: white;
+			background-image: url(duckl.png);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="content">
+		<h4 style="margin-left: 20px">Очки: <span class="score"></span></h4>
+		<img src="dice.png" class="dice" style="width: 100px; margin-left: 20px">		
+		<div class="box firstBox" style="margin-left: 20px">
+			<h4>ФИНИШ</h4>
+		</div>
+		<div class="box" style="margin-left: 130px">1</div>
+		<div class="box" style="margin-left: 240px">2</div>
+		<div class="box" style="margin-left: 350px; background-color: red">3</div>
+				
+		<div class="box" style="margin-left: 460px">4</div> 
+		<div class="box" style="margin-left: 570px">5</div>
+		<div class="box" style="margin-left: 680px;  background-color: red">6</div>
+		<div class="box" style="margin-left: 790px">7</div>
+
+		<div class="box" style="margin-left: 900px">8</div>
+		<div class="box" style="margin-left: 1010px;background-color: red" >9</div>
+		<div class="box" style="margin-left: 1120px">10</div>
+		<div class="box" style="margin-left: 1230px">11</div>
+
+		<div class="box" style="margin-left: 1340px;background-color: red">12 
+			<p>иди назад на -5 клеток</p>
+		</div>
+		<div class="box" style="margin-left: 1340px; margin-top: 110px">13</div>
+		<div class="box" style="margin-left: 1340px; margin-top: 220px">14</div>	
+		<div class="box" style="margin-left: 1340px; margin-top: 330px">15</div>		
+
+		<div class="box" style="margin-left: 1340px; margin-top: 440px">16</div>
+		<div class="box" style="margin-left: 1230px; margin-top: 440px">17</div>
+		<div class="box" style="margin-left: 1120px; margin-top: 440px">18</div>
+		<div class="box" style="margin-left: 1010px; margin-top: 440px">19</div>
+
+		<div class="box" style="margin-left: 900px; margin-top: 440px">20</div>
+		<div class="box" style="margin-left: 790px; margin-top: 440px">21</div>
+		<div class="box" style="margin-left: 680px; margin-top: 440px">22</div>
+		<div class="box" style="margin-left: 570px; margin-top: 440px">23</div>
+
+		<div class="box" style="margin-left: 460px; margin-top: 440px">24</div>
+		<div class="box" style="margin-left: 350px; margin-top: 440px">25</div>
+		<div class="box" style="margin-left: 240px; margin-top: 440px">26</div>
+		<div class="box" style="margin-left: 130px; margin-top: 440px">27</div>
+
+		<div class="box" style="margin-left: 20px; margin-top: 440px">28</div>
+		<div class="box" style="margin-left: 20px; margin-top: 330px">29</div>
+		<div class="box" style="margin-left: 20px; margin-top: 220px">30</div>	
+		<div class="box" style="margin-left: 20px; margin-top: 110px">31</div>		
+
+		<!--последние дивы-->
+		<div class="box" style="margin-left: 130px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="box" style="margin-left: 240px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="box" style="margin-left: 350px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="box" style="margin-left: 460px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="box" style="margin-left: 570px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="box" style="margin-left: 680px; margin-top: 110px; background-color: green; opacity: 0"></div>
+
+	</div>		
+</body>
+</html>
+
+<script type="text/javascript">
+	let score = 0; // как обычно, прописываем всё для очков
+	let score_span = document.querySelector(".score");
+	score_span.innerHTML = score;
+	let box_array = document.querySelectorAll(".box"); // пихаем все дивы в массив 
+ 	let duck_current_location = 0; // переменная текущей позиции уточки
+
+	function scoreCount(score_plus) { // ф-я подсчета очков, принимает параметр дополнительных очков после каждого хода
+		score = score + score_plus;
+		score_span.innerHTML = score;
+	}
+
+	document.querySelector(".dice").onclick = function(){
+		box_array[duck_current_location].style.backgroundImage = "none"; // у 0-го дива убрать фоновую картинку уточки
+		let random_number = Math.round(Math.random() * 6); // сгенерировать случайное целое число 
+		if(random_number == 0) { // если рандомное число равно 0, то пусть выпадет 1, потому что у стандартных костей, как правило, нету грани с нулём, только 1-6.
+			random_number = 1;
+		}		
+		duck_current_location += random_number; // к переменной текущей позиции уточки прибавить рандомное число
+		alert('Вали на ' + random_number + ' на клетку ' + duck_current_location); // сообщить инфу игроку про выпавшее число			
+		box_array[duck_current_location].style.backgroundImage = 'url(duckl.png)'; // у дива с индексом текущего шага изменить фоновую картинку на уточку
+		scoreCount(10); // прибавить 10 очков после успешного шага
+		if (duck_current_location>31) { // если уточка вышла за пределы наших дивов, то
+			document.querySelector(".content").style.display = "none"; // скрыть главный див игры с классом content
+			alert("Победа!"); 
+		} 
+		if (duck_current_location == 3 || duck_current_location == 6 || duck_current_location == 9) { // если сумма шагов будет равна 3,6,9, т.е. если уточка будет стоять на 3, 6, 9 диве, то 
+			alert("очки минус! Вали на клетку назад");
+			duck_current_location--; // шаг назад
+			scoreCount(-20); // вычесть 20 очков из общего счета
+			box_array[3].style.backgroundImage = "none"; // удаляем уточку с дива 3
+			box_array[6].style.backgroundImage = "none"; // удаляем уточку с дива 6
+			box_array[9].style.backgroundImage = "none"; // удаляем уточку с дива 9
+			box_array[duck_current_location].style.backgroundImage = 'url(duckl.png)'; // уточка теперь находится в диве своей текущей позиции
+			
+		} 
+		if (duck_current_location == 12) { // если уточка встала на 12-й див
+      		alert("очки минус! Вали на пять клеток назад! Быстро!");
+      		scoreCount(-50); // вычесть 50 очков из общего счета
+			duck_current_location -= 5; // текущая позиция уточки - 5, уточка уходит на 5 дивов назад
+			box_array[12].style.backgroundImage = "none"; // удаляем уточку с дива 12
+			box_array[duck_current_location].style.backgroundImage ='url(duckl.png)'; // уточка теперь находится в диве своей текущей позиции
+		}
+	}
+</script>
