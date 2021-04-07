@@ -1,0 +1,17 @@
+<button class="btn">Нажми меня</button>
+
+<p>Новое рандомное число: <span class="new">0</span></p>
+<p>В сумме: <span class="summ"></span></p>
+<script>
+	let sum = 0;
+	let random_number_span = document.querySelector(".new");
+	let sum_span = document.querySelector(".summ");
+	document.querySelector(".btn").onclick = function() {
+			let random_number = Math.round(Math.random() * 5);
+			random_number_span.innerHTML = random_number;
+			sum += random_number;
+			sum_span.innerHTML = sum;
+		}
+
+	
+</script>

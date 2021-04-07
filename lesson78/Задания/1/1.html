@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button class="btn">Нажми меня</button>
+	<p>Очки: <span class="score">0</span></p>
+	<script>
+		let score = 0;
+		let score_span = document.querySelector(".score");
+		document.querySelector(".btn").onclick = function() {
+			let random_number = Math.round(Math.random() * 5);
+			alert(random_number);
+			if(random_number == 1 || random_number == 3 || random_number == 5) {
+				scoreSpanUpdate(2);
+			}
+
+			if(random_number == 0 || random_number == 2 || random_number == 4) {
+				scoreSpanUpdate(1);
+			}
+		}
+
+		function scoreSpanUpdate(number_to_add) {
+			score += number_to_add;
+			score_span.innerHTML = score;
+		}
+	</script>
+</body>
+</html>

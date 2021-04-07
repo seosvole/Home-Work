@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.d-flex{
+			display: flex;
+		}
+		.box{
+			height: 200px;
+			width: 200px;
+			background-color: red;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<button class="btn">Изменить картинку</button>
+	<div class="d-flex">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+	
+	<script>
+		let btn = document.querySelector(".btn");
+		let boxes = document.querySelectorAll(".box");
+		btn.onclick = function() {
+			let random_number = Math.round(Math.random() * 4);
+			alert(random_number);
+			boxes[random_number].style.backgroundImage = "url(img.png)";
+			boxes[random_number].style.backgroundSize = "100% 100%";
+		}
+	</script>
+</body>
+</html>
